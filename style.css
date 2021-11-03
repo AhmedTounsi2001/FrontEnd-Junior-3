@@ -1,0 +1,334 @@
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@400;600&display=swap');
+:root {
+    --Strong-Cyan: hsl(171, 66%, 44%);
+    --Light-Blue: hsl(233, 100%, 69%);
+    --Dark-Grayish-Blue: hsl(210, 10%, 33%);
+    --Grayish-Blue: hsl(201, 11%, 66%);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 18px;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+#headers {
+    color: var(--Dark-Grayish-Blue);
+}
+
+#texts {
+    color: var(--Grayish-Blue);
+}
+
+
+/* Start Header Style */
+
+header {
+    min-height: 70vh;
+    background: url(./img/bg-header-desktop.png) no-repeat;
+    background-size: contain;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+
+header img {
+    position: relative;
+    top: 40%;
+}
+
+header h1 {
+    margin-top: 1.5em;
+    font-size: 2.5em;
+}
+
+header p {
+    position: relative;
+    bottom: 50%;
+    line-height: 1.5em;
+    font-size: 1.1em;
+    width: 45%;
+}
+
+.nav-bar {
+    display: flex;
+    list-style: none;
+    gap: 1.5em;
+    position: relative;
+    bottom: 80%;
+}
+
+.nav-bar li {
+    padding: 1em 2em;
+    border-radius: 30px;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 700;
+}
+
+#green {
+    background: var(--Strong-Cyan);
+    margin: 20px auto;
+    transition: 500ms linear;
+    opacity: .7;
+    box-shadow: rgba(8, 110, 92, .7) 0px 3px 8px;
+}
+
+#green:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+#blue {
+    margin: 20px auto;
+    transition: 500ms linear;
+    background: rgba(97, 115, 255, .7);
+    box-shadow: rgb(52, 67, 185) 0px 3px 8px;
+}
+
+#blue:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+/* End Header Style */
+
+
+/* Start Main Style */
+
+main>div {
+    gap: 2em;
+}
+
+
+/* Start Main Heading Style */
+
+.m-heading {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 5em;
+}
+
+.m-heading h2 {
+    font-size: 2em;
+}
+
+.m-heading p {
+    width: 50%;
+    line-height: 1.7em;
+}
+
+
+/* End Main Heading Style */
+
+
+/* Start Main main Style */
+
+.main {
+    display: flex;
+    margin: 1em 0em;
+}
+
+main img {
+    position: relative;
+    right: 3%;
+}
+
+#m-features {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.feature {
+    margin: 1em 4em;
+    width: 50%;
+}
+
+.feature h3 {
+    font-size: 1.2em;
+}
+
+.feature p {
+    margin-top: 0.6em;
+    line-height: 1.6em;
+}
+
+#m-features {
+    min-height: 100%;
+    gap: 1em;
+    list-style: none;
+}
+
+#m-features li {
+    gap: 2em;
+}
+
+
+/* End Main main Style */
+
+
+/* Start Main Body Style */
+
+.body {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    margin-top: 10em;
+    text-align: center;
+}
+
+.body h2 {
+    font-size: 2em;
+}
+
+.body p {
+    width: 45%;
+}
+
+.body img {
+    margin-top: 4em;
+}
+
+
+/* End Main Body Style */
+
+
+/* Start Footer Body Style */
+
+.footer {
+    text-align: center;
+}
+
+.footer h2 {
+    font-size: 2em;
+    margin-top: 2em;
+    margin-bottom: .6em;
+}
+
+.features {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+    margin-top: 2em;
+    gap: 1em;
+}
+
+.features>li {
+    width: 23%;
+    line-height: 1.7em;
+}
+
+.features p {
+    font-size: 0.9em;
+}
+
+.features h3 {
+    font-size: 1.4em;
+    margin-bottom: 1em;
+}
+
+.features img {
+    margin-bottom: 2em;
+    margin-top: 2em;
+}
+
+.sponsors {
+    margin-top: 10em;
+    margin-bottom: 10em;
+    display: flex;
+    place-content: center;
+    list-style: none;
+    gap: 6em;
+}
+
+.f-download {
+    display: flex;
+    flex-direction: column;
+    place-items: center;
+    gap: 1.5em;
+}
+
+.f-download p {
+    width: 50%;
+    margin-bottom: 2em;
+    line-height: 1.8em;
+}
+
+
+/* End Footer Body Style */
+
+
+/* End Main Style */
+
+
+/* Start Footer Style */
+
+footer {
+    margin-top: 5em;
+    background: #f5f6f8;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2em 10em;
+}
+
+.website-nav {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5em;
+    list-style: none;
+}
+
+.website-nav a {
+    color: var(--Dark-Grayish-Blue);
+    text-decoration: none;
+}
+
+.foot-logo {
+    width: 70px;
+    height: 70px;
+}
+
+.socials {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    transition-delay: 500ms linear;
+}
+
+.socials li:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.website-nav a:hover {
+    color: var(--Strong-Cyan);
+    cursor: pointer;
+}
+
+
+/* End Footer Style */
+
+
+/* Start Media Queries */
+
+
+/* End Media Queries */
