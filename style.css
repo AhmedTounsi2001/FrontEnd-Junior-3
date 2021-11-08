@@ -339,8 +339,19 @@ footer {
 
 
 /* Start Media Queries */
-
-@media all and (min-width: 316px) and (max-width: 716px) {
+    @media all and (min-width: 720px) and (max-width: 815px) {
+        #header p {
+            position: relative;
+            bottom: 30%;
+        }
+    }
+    
+    @media all and (min-width: 716px) and (max-width: 1120px) {
+        #header p {
+            margin-top: 2em;
+        }
+    }
+@media all and (min-width: 316px) and (max-width: 1120px) {
     body {
         display: flex;
         flex-direction: column;
